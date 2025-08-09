@@ -72,8 +72,8 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.11)
       valkoma-package:
-        specifier: ^0.1.17
-        version: 0.1.17(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss-animate@1.0.7(tailwindcss@4.1.11))(tailwindcss@4.1.11)
+        specifier: ^0.1.19
+        version: 0.1.19(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss-animate@1.0.7(tailwindcss@4.1.11))(tailwindcss@4.1.11)
       vaul:
         specifier: ^0.9.9
         version: 0.9.9(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2589,6 +2589,12 @@ packages:
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
+  react-markdown@10.1.0:
+    resolution: {integrity: sha512-qKxVopLT/TyA6BX3Ue5NwabOsAzm0Q7kAPwq6L+wWDwisYs7R8vZ0nRXqq6rkueboxpkjvLGU9fWifiX/ZZFxQ==}
+    peerDependencies:
+      '@types/react': '>=18'
+      react: '>=18'
+
   react-markdown@9.1.0:
     resolution: {integrity: sha512-xaijuJB0kzGiUdG7nc2MOMDUDBWPyGAjZtUrow9XxUeua8IqeP+VlIfAZ3bphpcLTnSZXz6z9jcVC/TCwbfgdw==}
     peerDependencies:
@@ -2886,8 +2892,8 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  valkoma-package@0.1.17:
-    resolution: {integrity: sha512-Z0SqvROW9xqY9RQE04g17Pnm699nCK42pyHyaBOVw6J2cauACprjBraf+fVgiTcF/VEsPxQtoMl1+2agDEwMEQ==}
+  valkoma-package@0.1.19:
+    resolution: {integrity: sha512-ybT9N8g3BXMB2kzDd/myaNeWn7mmB+ri3A3AywR80gsob4o1hX9/jH2dzdDP/waDHZYJ/JYeyXU13BmkXFM+vw==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -5541,6 +5547,24 @@ snapshots:
 
   react-is@18.3.1: {}
 
+  react-markdown@10.1.0(@types/react@18.3.23)(react@18.3.1):
+    dependencies:
+      '@types/hast': 3.0.4
+      '@types/mdast': 4.0.4
+      '@types/react': 18.3.23
+      devlop: 1.1.0
+      hast-util-to-jsx-runtime: 2.3.6
+      html-url-attributes: 3.0.1
+      mdast-util-to-hast: 13.2.0
+      react: 18.3.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      unified: 11.0.5
+      unist-util-visit: 5.0.0
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
   react-markdown@9.1.0(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       '@types/hast': 3.0.4
@@ -5913,7 +5937,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  valkoma-package@0.1.17(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss-animate@1.0.7(tailwindcss@4.1.11))(tailwindcss@4.1.11):
+  valkoma-package@0.1.19(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss-animate@1.0.7(tailwindcss@4.1.11))(tailwindcss@4.1.11):
     dependencies:
       '@hookform/resolvers': 5.2.1(react-hook-form@7.62.0(react@18.3.1))
       '@radix-ui/react-accordion': 1.2.11(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -5958,8 +5982,11 @@ snapshots:
       react-day-picker: 9.8.1(react@18.3.1)
       react-dom: 18.3.1(react@18.3.1)
       react-hook-form: 7.62.0(react@18.3.1)
+      react-markdown: 10.1.0(@types/react@18.3.23)(react@18.3.1)
       react-resizable-panels: 3.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       recharts: 2.15.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      rehype-sanitize: 6.0.0
+      remark-gfm: 4.0.1
       sonner: 2.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tailwind-merge: 2.6.0
       tailwindcss: 4.1.11
@@ -5969,6 +5996,7 @@ snapshots:
       - '@emotion/is-prop-valid'
       - '@types/react'
       - '@types/react-dom'
+      - supports-color
 
   vaul@0.9.9(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

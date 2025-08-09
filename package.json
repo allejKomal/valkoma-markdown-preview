@@ -31,7 +31,7 @@
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
     "tailwindcss-animate": "^1.0.7",
-    "valkoma-package": "^0.1.17",
+    "valkoma-package": "^0.1.19",
     "vaul": "^0.9.9",
     "zod": "3.25.67"
   },
